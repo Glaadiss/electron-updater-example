@@ -92,9 +92,7 @@ autoUpdater.on('download-progress', (progressObj) => {
 autoUpdater.on('update-downloaded', (info) => {
   sendStatusToWindow('Update downloaded');
 
-  setTimeout(() => {
-    autoUpdater.quitAndInstall();
-  }, 5000)
+  autoUpdater.quitAndInstall(true, true);
 });
 app.on('ready', function() {
   // Create the Menu
