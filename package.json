@@ -1,11 +1,11 @@
 {
-  "name": "electron-updater-example2",
-  "version": "0.7.7",
+  "name": "electron-updater-example3",
+  "version": "0.7.9",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Glaadiss",
   "scripts": {
-    "publish": "electron-builder build --mac --win -p always",
+    "publish": "electron-builder build --win -p always",
     "electron": "electron ."
   },
   "devDependencies": {
@@ -17,18 +17,20 @@
     "electron-updater": "^4.3.4"
   },
   "build": {
-    "appId": "com.github.glaadiss.electronupdaterexample2",
+    "appId": "com.github.glaadiss.electronupdaterexample3",
     "mac": {
       "category": "your.app.category.type",
       "target": [
         "dmg"
       ]
     },
-    "publish": [{
-      "provider": "github",
-      "owner": "glaadiss",
-      "repo": "electron-updater-example"
-  }],
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "glaadiss",
+        "repo": "electron-updater-example"
+      }
+    ],
     "nsis": {
       "oneClick": false,
       "perMachine": false,
