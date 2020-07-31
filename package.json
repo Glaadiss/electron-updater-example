@@ -1,13 +1,13 @@
 {
   "name": "electron-updater-example4",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Glaadiss",
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
-		"build": "electron-builder --windows",
-		"release": "electron-builder --windows --publish always",
+    "build": "electron-builder --windows",
+    "release": "electron-builder --windows --publish always",
     "electron": "electron ."
   },
   "devDependencies": {
